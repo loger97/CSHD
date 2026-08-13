@@ -64,16 +64,6 @@
             }
           },
           {
-            "id": "3f1d091b344ebd9a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
             "id": "77e3dc5f921a0fec",
             "type": "leaf",
             "state": {
@@ -269,11 +259,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "3f1d091b344ebd9a",
+  "active": "9d40cbb521bf0f4a",
   "lastOpenFiles": [
+    "3D-Editor Tutorial/picturesChap4/pictures/axe.png",
+    "README.md",
+    "3D-Editor Tutorial/picturesChap4/pictures/boost.png",
     "3D-Editor Tutorial/Chapter 4 - CSHD levels.md",
     "Scene States.md",
-    "README.md",
     "3D-Editor Tutorial/Chapter 3 - Chunk map editor.md",
     "4.3 - Setting up complex features.md",
     "4.2 - All possible features.md",
@@ -287,15 +279,13 @@
     "3D-Editor Tutorial/picturesChap4",
     "3D-Editor Tutorial/Chapter 2 - Data & Tools.md",
     "3D-Editor Tutorial/picturesChap3/fullScreen shot.png",
-    "3D-Editor Tutorial/picturesChap3/lilmap.png",
-    "3D-Editor Tutorial/picturesChap3/seeMap.png",
     "3D-Editor Tutorial/picturesChap3",
     "3D-Editor Tutorial/Chapter 1 - Basics.md",
     "3D-Editor Tutorial/picturesChap2",
     "3D-Editor Tutorial/picturesChap1",
     "3D-Editor Tutorial",
     "New folder",
-    "pictures",
+    "3D-Editor Tutorial/picturesChap4/pictures",
     "Recommended Moon colors.md",
     "4.1 - Creating a simple level.md",
     "scenes.md",

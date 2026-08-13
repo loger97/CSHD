@@ -137,7 +137,7 @@ The moving platform (class type "m") has 4 data slots:
 starting point at the beginning of the time.
 
 You can see the structural implementation here:
-![](pictures/move.png)
+![](move.png)
 ### Circling platforms
 Next up is the circling platform.
 
@@ -152,7 +152,7 @@ The circling platform (class type "c") has 4 data slots:
 ➣Speed in degrees.
 
 You can see the structural implementation here:
-![](pictures/circle.png)
+![](circle.png)
 
 ### Rotating platforms
 The rotating platforms (class type "r") have 7 data slots:
@@ -174,7 +174,7 @@ The rotating platforms (class type "r") have 7 data slots:
 (offset means how it is already rotated when the game starts)
 
 You can see the structural implementation here:
-![](pictures/rotate.png)
+![](rotate.png)
 
 
 ### Balancing platforms
@@ -191,7 +191,7 @@ The balancing platforms (class type "ba") have 4 data slots:
 **Important**: the second point of the falling vector must be 90 degrees away (CCW) from the second point of the rotating vector relative to the Y axis.
 
 You can see the structural implementation here:
-![](pictures/plank.png)
+![](plank.png)
 
 
 ### Enemies
@@ -209,7 +209,7 @@ The boosting circle (class type "bc") has only one slot:
 ➣Ending point of direction vector
 
 You can see the structural implementation:
-![](pictures/boost.png)
+![](boost.png)
 
 
 ### Swinging axe
@@ -228,7 +228,7 @@ The axe (class type "axe") has 5 slots:
  **Important**: the first point when filling a line must be upward, the same way it is for swinging rope.
 
 You can see the structural implementation here:
-![](pictures/axe.png)
+![](axe.png)
 
 
 ### Buttons & MTF platforms
@@ -253,7 +253,7 @@ Platform which will be moved to a fixed position once the button is triggered ("
 ➣Target position point
 
 You can see the structural implementation here:
-![](pictures/buttonMTF.png)
+![](buttonMTF.png)
 
 
 ### Checkpoints
