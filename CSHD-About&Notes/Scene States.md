@@ -1,6 +1,5 @@
-|                |                          |             |                          |            |
-| -------------- | ------------------------ | ----------- | ------------------------ | ---------- |
 | Level          | Internal name (sceen ID) | Scenario 1  | Scenario 2               | Scenario 3 |
+| -------------- | ------------------------ | ----------- | ------------------------ | ---------- |
 | Going Boing    | 1                        | First Visit | Revisit-PostGameBonus-20 | Time Trial |
 | Clank Plank    | 2                        | First Visit |                          | Time Trial |
 | Dull Bull      | 3                        | Boss1       |                          |            |
