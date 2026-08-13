@@ -5,7 +5,7 @@ CSHD, or Crystal Seeker HD, is a mod of [Crystal Seeker](https://scratch.mit.edu
 ## Weird files
 In this repository, you will find uncompiled code in the form of .sb3 files; in order to edit them, use [Turbowarp](https://desktop.turbowarp.org/).
 Save data will be in .sav files and, as of right now, can only be read by CSHD.
-Level data is in two places; the first is in the `Crystal Seeker HD.sb3` file, spesificly under the "root/data" path, the second place you can find level data is in the SDK directory each "scene" is in it's own .lvl file named after it's scene ID (you can look them up here: [[Scene States]])
+Level data is in two places; the first is in the `Crystal Seeker HD.sb3` file, specifically under the "root/data" path. The second place you can find level data is in the SDK directory; each "scene" is in its own .lvl file named after its scene ID (you can look them up here: [[Scene States]])
 
 **NOTE** Large files are split into 10mb files; use 7zip (or similar) to recombine them
 
@@ -13,6 +13,6 @@ Level data is in two places; the first is in the `Crystal Seeker HD.sb3` file, s
 In CSHD, scenes are the 3D data Crystal3D (the engine of CSHD) uses to draw an environment.
 Levels can contain many scenes, and scenes might not have a level. What you need to know is all levels have at least one scene, but not all scenes need to have a level. To learn more go to [[Chapter 4 - CSHD levels]]
 
-Help with complex editor/Crystal3D Topics:'
+Help with complex editor/Crystal3D Topics:
 [[Chapter 1 - Basics]]
 [[Scene States]]
