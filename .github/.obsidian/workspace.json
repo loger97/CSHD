@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scene States.md",
+                "file": "3D-Editor Tutorial/Chapter 4 - CSHD levels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scene States"
+              "title": "Chapter 4 - CSHD levels"
             }
           }
         ]
@@ -190,14 +190,14 @@
   },
   "active": "31dc80c29e2be91a",
   "lastOpenFiles": [
-    "3D-Editor Tutorial/Chapter 4 - CSHD levels.md",
     "3D-Editor Tutorial/Chapter 3 - Chunk map editor.md",
+    "Scene States.md",
+    "3D-Editor Tutorial/Chapter 4 - CSHD levels.md",
     "3D-Editor Tutorial/Chapter 2 - Data & Tools.md",
     "3D-Editor Tutorial/Chapter 1 - Basics.md",
     "README.md",
     "3D-Editor Tutorial/picturesChap4/pictures/axe.png",
     "3D-Editor Tutorial/picturesChap4/pictures/boost.png",
-    "Scene States.md",
     "4.3 - Setting up complex features.md",
     "4.2 - All possible features.md",
     "3D-Editor Tutorial/picturesChap4/Pasted image 20260813002759.png",
