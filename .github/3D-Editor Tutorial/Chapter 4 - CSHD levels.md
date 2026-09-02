@@ -257,7 +257,7 @@ You can see the structural implementation here:
 
 
 ### Checkpoints
-The checkpoint (class type "cp") is an AABB (box) collision; when you touch it, it saves you to that point.
+The checkpoint (class type "cp" or "qCP") is an AABB (box) collision; when you touch it, it saves you to that point.
 
 Buttons have 3 data slots:
 
@@ -266,6 +266,8 @@ Buttons have 3 data slots:
 ➣The second point of AABB
 
 ➣Angle of checkpoint (0-360)
+
+
 
 The AABB is structured so that one point should be at the bottom, and the other at the top, but with different.
 
