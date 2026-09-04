@@ -1,6 +1,8 @@
+import cloudlink
 from cloudlink import server
 from cloudlink.server.protocols import clpv4, scratch
 import asyncio
+import os
 
 
 class example_callbacks:
@@ -53,6 +55,7 @@ class example_events:
 
 if __name__ == "__main__":
     # Initialize the server
+    cl = cloudlink
     server = server()
 
     # Configure logging settings
@@ -106,11 +109,6 @@ async def protocol_disconnect(client):
     print(client, "Disconnected...")
 
 # Commands and error handling
-@server.on_command(cmd="setLevel", schema=clpv4.schema)
-async def setLevel(client, message):
-    yap = {"WOW!": "yes", "realy": "no"}
-    await server.run(ip="localhost", port=3000)
-    print("What the heck are you talking about?!" + str(message) + str(client))
 @server.on_exception(exception_type=server.exceptions.InvalidCommand, schema=clpv4.schema)
 async def invalid_command(client, details):
     print(client, "sent an invalid command", details)
@@ -120,6 +118,45 @@ async def json_exception(client, details):
 # @server.empty_message(exception_type=server.exceptions.EmptyMessage, schema=clpv4.schema)
 # async def empty_message(client, details):
 #     print(client, details)
+
+## GMINI
+class MessageTriggerPlugin:
+    def __init__(self, server_obj, protocol_obj):
+        self.server = server_obj
+        self.protocol = protocol_obj
+
+        # Register the listener for the client-side command
+        @self.server.on_command(cmd="broadcast_all", schema=self.protocol.schema)
+        async def handle_broadcast_request(client, message):
+            """
+            client: The CloudLink client object who sent the message
+            message: The raw dict received (contains keys like 'cmd', 'val', etc.)
+            """
+            # Extract what the client wants to broadcast from the 'val' key
+            scene = message.get("val", "")
+            try:
+                with open("../../data/clientlookup/leveldata/"+str(scene)+".lvl") as lvlFile:
+                    fileContent = lvlFile.read()
+                    returnSceneData = fileContent
+                print(f"Successfully loaded lvl file for scene {scene}")
+            except:
+                print(f"Failed to load lvl file for scene {scene}")
+                pass
+
+            # Structure the global message packet adhering to clpv4 specifications
+            gmsg_packet = {
+                "cmd": "gmsg",
+                "val": returnSceneData
+            }
+            try:
+                # This forcefully transmits the data downstream to the client
+                server.send_packet(obj=client, message=gmsg_packet)
+            except Exception as e:
+                print(f"Failed to transmit to client {client}: {e}")
+
+
+# Load your custom hook engine into the server context
+MessageTriggerPlugin(server, clpv4)
 
 # Start the server!
 server.run(ip="localhost", port=3000)

@@ -6,7 +6,7 @@ if __name__ == "__main__":
     
     # Configure logging settings
     client.logging.basicConfig(
-        level=client.logging.DEBUG
+        level=client.logging.INFO
     )
 
     # Use this decorator to handle established connections.
